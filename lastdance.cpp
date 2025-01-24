@@ -81,7 +81,7 @@ pair<vector<int>, vector<int>> dijkstra(vector<vector<int>>& graf, int destino, 
 void imprimirArbol(Nodo* nodo, string prefijo = "") {
     if (!nodo) return;
 
-    cout << prefijo << nodo->letra << "(" << nodo->peso << ")\n";
+    cout << prefijo << nodo->letra << "(" << nodo->peso << ")"<<endl;
     prefijo += "   ";
     for (auto hijo : nodo->hijos) {
         imprimirArbol(hijo, prefijo);
@@ -112,7 +112,7 @@ vector<vector<int>> leerGrafoDesdeArchivo(string& nombreArchivo) {
     if (getline(arch, linea)) {
         int n = stoi(linea);
         if (n > 26) {
-            cout << "\nArchivo excede el maximo. Solo se permite un largo de 26 (letras del abecedario ingles). Favor de modificar el archivo.\n\n";
+            cout << "\nArchivo excede el maximo. Solo se permite un largo de 26 (letras del abecedario ingles). Favor de modificar el archivo."<<endl;
             exit(1);
         } else {
             while (getline(arch, linea)) {
