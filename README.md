@@ -16,7 +16,7 @@ En el codigo, el árbol se forma durante la ejecucion del algoritmo de Dijkstra,
 Para runear una vez compilado: ./nombreX
 
 ## Archivos txt
-En la carpeta output hay 6 archivos .txt con diferentes grafos. Para probarlos cambiar el nombre del archivo en la linea 195 en el main().
+En la carpeta output hay 6 archivos .txt con diferentes grafos. Para probarlos cambiar el nombre del archivo en la linea 190 en el main().
 
 ### Para runear el codigo con el archivo txt seleccionado.
 - En codespace
